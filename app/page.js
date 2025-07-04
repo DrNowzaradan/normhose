@@ -11,26 +11,26 @@ import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import BackgroundBubbles from "./components/BackgroundBubbles";
 //import data from "../../../data.json"
 
-const productContent = [
-  {
-    title: "NOYAS",
-    img: "/noyas-m-1a.webp",
-    desc: "NOYAS katı partikül filtrasyonu ve yağ aktarım cihazı kendi emiş pompası sayesinde sistem tankından yağı emdikten sonra, yağ önce pompayı korumak için YE filtreden sonrasında proses gerekliliklerine ve müşteri taleplerine göre tek filtreden, ikili filtreden, üçlü filtreden veya dörtlü filtreden geçerek sistem tankına geri bırakılır. Sistem yağını sürekli olarak off-line filtrasyon işlemine tabi tutan NOYAS cihazı, filtre kablarındaki basıç sensörleri sayesinde filtre kirlilik alarmı verir. Opsiyon olarak cihaza entegre ettiğimiz PARKER IPD Partikül ölçüm cihazı sayesinde yağın NAS/ISO/SAE Standartlarında analiz değerleri gözlemlenebilir.",
-    href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/noyas-m-1a"
-  },
-  {
-    title: "NOOFF",
-    img: "/nooff-s-2a.webp",
-    desc: "NOOFF, üzerinde bulunan devirdaim pompası ile sistem tankındaki yağı proses gereklilikleri ya da müşteri beklentilerine göre tek, ikili, üçlü veya dörtlü filtreden geçirir ve sistem tankına geri bırakır. Sistem yağını sürekli olarak harici filtrasyon işlemine tabi tutan NOOFF’un, kolayca açılan dış filtre kapları sayesinde, filtre elemanları kolayca değiştirilir. Müşteri talep ve gerekliliklerine göre entegte edilebilen PARKER IPD Partikül ölçüm cihazı ile yağın kirlilik seviyelerini NAS/ISO/SAE standartları ile gözlemleyebilir, katı partikül seviyelerini rahatlıkla kontrol altında tutabilirsiniz.",
-    href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/nooff-s-2a"
-  },
-  {
-    title: "NOPYAS",
-    img: "/nopyas-m.webp",
-    desc: "NOPYAS üzerinde bulunan emiş pompası ile sistem tankından yağı alarak proses gereklilikleri ya da müşteri beklentilerine göre ikili ya da dörtlü filtreden geçirir ve sistem tankına geri bırakır. Sistem yağını sürekli olarak harici filtrasyon işlemine tabi tutan NOPYAS, filtre kaplarında bulunan basınç sensörleri ile filtre doluluk uyarısı verir. Filtre elemanları kolayca değiştirilir. NOPYAS’da bulunan PARKER IPD Partikül ölçüm cihazı ile yağın kirlilik seviyelerini NAS/ISO/SAE standartları ile gözlemleyebilir, katı partikül seviyelerini rahatlıkla kontrol altında tutabilirsiniz. NOPYAS üzerinde bulunan PLC ekran ile filtrasyon süreçlerini yönetmek artık daha kolay. Sistemdeki yağ sıcaklığı, akış hızı, çevrimi yapılan yağ miktarı, bağıl nem ölçümü ve partikül seviyeleri her zaman elinizin altında. Nem ve partikül sonuçlarını, NOPYAS’da bulunan termal yazıcı, gerektiğinde çıktı alma kolaylığı sağlar.",
-    href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/nopyas-m"
-  },
-];
+// const productContent = [
+//   {
+//     title: "NOYAS",
+//     img: "/noyas-m-1a.webp",
+//     desc: "NOYAS katı partikül filtrasyonu ve yağ aktarım cihazı kendi emiş pompası sayesinde sistem tankından yağı emdikten sonra, yağ önce pompayı korumak için YE filtreden sonrasında proses gerekliliklerine ve müşteri taleplerine göre tek filtreden, ikili filtreden, üçlü filtreden veya dörtlü filtreden geçerek sistem tankına geri bırakılır. Sistem yağını sürekli olarak off-line filtrasyon işlemine tabi tutan NOYAS cihazı, filtre kablarındaki basıç sensörleri sayesinde filtre kirlilik alarmı verir. Opsiyon olarak cihaza entegre ettiğimiz PARKER IPD Partikül ölçüm cihazı sayesinde yağın NAS/ISO/SAE Standartlarında analiz değerleri gözlemlenebilir.",
+//     href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/noyas-m-1a"
+//   },
+//   {
+//     title: "NOOFF",
+//     img: "/nooff-s-2a.webp",
+//     desc: "NOOFF, üzerinde bulunan devirdaim pompası ile sistem tankındaki yağı proses gereklilikleri ya da müşteri beklentilerine göre tek, ikili, üçlü veya dörtlü filtreden geçirir ve sistem tankına geri bırakır. Sistem yağını sürekli olarak harici filtrasyon işlemine tabi tutan NOOFF’un, kolayca açılan dış filtre kapları sayesinde, filtre elemanları kolayca değiştirilir. Müşteri talep ve gerekliliklerine göre entegte edilebilen PARKER IPD Partikül ölçüm cihazı ile yağın kirlilik seviyelerini NAS/ISO/SAE standartları ile gözlemleyebilir, katı partikül seviyelerini rahatlıkla kontrol altında tutabilirsiniz.",
+//     href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/nooff-s-2a"
+//   },
+//   {
+//     title: "NOPYAS",
+//     img: "/nopyas-m.webp",
+//     desc: "NOPYAS üzerinde bulunan emiş pompası ile sistem tankından yağı alarak proses gereklilikleri ya da müşteri beklentilerine göre ikili ya da dörtlü filtreden geçirir ve sistem tankına geri bırakır. Sistem yağını sürekli olarak harici filtrasyon işlemine tabi tutan NOPYAS, filtre kaplarında bulunan basınç sensörleri ile filtre doluluk uyarısı verir. Filtre elemanları kolayca değiştirilir. NOPYAS’da bulunan PARKER IPD Partikül ölçüm cihazı ile yağın kirlilik seviyelerini NAS/ISO/SAE standartları ile gözlemleyebilir, katı partikül seviyelerini rahatlıkla kontrol altında tutabilirsiniz. NOPYAS üzerinde bulunan PLC ekran ile filtrasyon süreçlerini yönetmek artık daha kolay. Sistemdeki yağ sıcaklığı, akış hızı, çevrimi yapılan yağ miktarı, bağıl nem ölçümü ve partikül seviyeleri her zaman elinizin altında. Nem ve partikül sonuçlarını, NOPYAS’da bulunan termal yazıcı, gerektiğinde çıktı alma kolaylığı sağlar.",
+//     href: "/urunler/filtrasyon-makineleri/yag-filtrasyonu/nopyas-m"
+//   },
+// ];
 const sectors = [
   {
     title: "Otomotiv",
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1">
-            <Image src="/hero-img.webp" className="max-w-[500px] lg:mx-0 mx-auto" alt="Normoil" width={1920} height={1080} data-aos="fade-left" data-aos-duration="200" loading="lazy" />
+            {/* <Image src="/hero-img.webp" className="max-w-[500px] lg:mx-0 mx-auto" alt="Normoil" width={1920} height={1080} data-aos="fade-left" data-aos-duration="200" loading="lazy" /> */}
           </div>
         </div>
         {/* <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#ff8900] filter blur-[120px] rounded-full -z-10 block"></div>
@@ -254,7 +254,7 @@ export default function Home() {
           </ParallaxBannerLayer>
           {/* <Image src={'/gates-mxt-anasayfa.jpg'} width={1920} height={800} alt="gates mxt" className="absolute top-0 left-0 w-full h-full object-cover brightness-25"></Image> */}
         </ParallaxBanner>
-
+{/* 
         <section className="bg-neutral-800 py-20 px-8 min-h-[300px] relative overflow-hidden">
             <div className={`container mx-auto`}>
                 <div className="flex flex-wrap items-center gap-10" data-aos="fade-right" data-aos-duration="200">
@@ -274,7 +274,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="absolute -bottom-1/2 left-1/2 translate-y-1/2 -translate-x-1/2 w-[800px] h-60 bg-[#ff8900] filter blur-[120px] rounded-full  lg:block hidden"></div>
-        </section>
+        </section> */}
 
         <CardList header="YENİ ÇÖZÜMLER">
           { solutions.map((solution, index) => (
