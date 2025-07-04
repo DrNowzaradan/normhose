@@ -25,26 +25,26 @@ function Footer() {
                                 <li className="number"><FontAwesomeIcon icon={faPhone} className='fa-icon mr-2 text-[#ff8900]' /> +90 (0216) 415 19 00</li>
                                 <li><FontAwesomeIcon icon={faEnvelope} className='fa-icon mr-2 text-[#ff8900]' /> info@normhose.com.tr</li>
                             </ul>
-                            <ul className="list-inline flex social mt-9 mb-2 p-0">
+                            <ul className="list-inline flex social mt-9 mb-2 p-0 gap-3">
                                 <li className="list-inline-item">
-                                    <Link href="https://www.instagram.com/normoilfiltration" target='_blank'>
-                                        <FontAwesomeIcon icon={faInstagram} className='fa-icon mr-2 text-white hover:text-[#ff8900] text-xl' />
-                                    </Link>
+                                    <a href="https://www.instagram.com/normhosehydraulic" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                    </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <Link href="https://tr.linkedin.com/company/normoil-filtrasyon-teknolojileri" target='_blank'>
-                                        <FontAwesomeIcon icon={faLinkedin} className='fa-icon mr-2 text-white hover:text-[#ff8900] text-xl' />
-                                    </Link>
+                                    <a href="https://www.linkedin.com/company/normhose/" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                                        <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                                    </a>
                                 </li>
+                                {/* <li className="list-inline-item">
+                                    <a href="https://m.facebook.com/normoil.filtrasyon/" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                                        <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+                                    </a>
+                                </li> */}
                                 <li className="list-inline-item">
-                                    <Link href="https://m.facebook.com/normoil.filtrasyon/" target='_blank'>
-                                        <FontAwesomeIcon icon={faFacebook} className='fa-icon mr-2 text-white hover:text-[#ff8900] text-xl' />
-                                    </Link>
-                                </li>
-                                <li className="list-inline-item">
-                                    <Link href="https://www.youtube.com/channel/UCWAe7Oey0hAIDhlm1dQ_azw/about" target='_blank'>
-                                        <FontAwesomeIcon icon={faYoutube} className='fa-icon mr-2 text-white hover:text-[#ff8900] text-xl' />
-                                    </Link>
+                                    <a href="https://www.youtube.com/@Normhose" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

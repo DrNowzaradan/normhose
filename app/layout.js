@@ -7,6 +7,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+import { ParallaxWrapper } from './components/Providers';
+
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
@@ -23,7 +25,9 @@ const DefaultLayout = ({ children }) => {
     <html lang="tr">
       <body className={`${montserrat.variable} antialiased`}>
         <Header></Header>
-        {children}
+        <ParallaxWrapper>
+          {children}
+        </ParallaxWrapper>
         <Footer></Footer>
         <GoogleAnalytics gaId="G-QH1GG2NC90"/>
       </body>

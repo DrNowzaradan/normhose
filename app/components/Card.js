@@ -5,8 +5,8 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 function Card({img, title, desc, link}) {
     return (
-        <div className="col-span-1 sector-card ">
-            <div className='flex flex-col justify-between border-bottom border-b-2 border-b-[#ff8900] bg-[#f9f9f9] rounded-xl h-full'>
+        <div className="col-span-1 sector-card rounded-xl">
+            <div className='flex flex-col justify-between border-bottom border-b-2 border-b-[#ff8900] bg-white rounded-xl shadow-sm h-full'>
                 {img && 
                 <div className="blognews">
                     <div className="item-img-wrap">
@@ -16,7 +16,7 @@ function Card({img, title, desc, link}) {
                 }
                 <div className="py-4 px-5">
                     <h5 className="font-semibold text-neutral-800 mb-3" data-aos="fade-up">{title}</h5>
-                    <p data-aos="fade-up">{desc}</p>
+                    <p data-aos="fade-up" className='text-neutral-600'>{desc}</p>
                 </div>
                 <div className="flex justify-between items-center h-[1px] w-auto bg-neutral-300 mt-auto mx-5"></div>
                 <div className="px-5 py-6">

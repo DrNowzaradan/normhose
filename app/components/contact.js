@@ -23,7 +23,7 @@ function Contact(props) {
         // Form verilerini backend'e gönderiyoruz
         try {
           const response = await axios.post('https://protam-api.onrender.com/send-email', {
-            to: 'NORMOIL',
+            to: 'NORMHOSE',
             name,
             message,
             email,

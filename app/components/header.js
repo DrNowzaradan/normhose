@@ -138,8 +138,8 @@ const navigation = {
     { name: 'Madencilik', href: '/sektorler/madencilik' },
     { name: 'Marin', href: '/sektorler/marin' },
     { name: 'Mobil', href: '/sektorler/mobil' },
-    { name: 'Deniz Motoru Madeni Yağ Arıtma Programı', href: '/sektorler/deniz-motoru-madeni-yag-aritma-programi' },
-    { name: 'Klas Onayı/IACS Kuralları ve Denizcilik Yönetmelikleri', href: '/sektorler/klas-onayi-iacs-kurallari-ve-denizcilik-yonetmelikleri' },
+    { name: 'Madeni Yağ Arıtma Programı', href: '/sektorler/deniz-motoru-madeni-yag-aritma-programi' },
+    { name: 'Klas Onayı/IACS Kuralları', href: '/sektorler/klas-onayi-iacs-kurallari-ve-denizcilik-yonetmelikleri' },
     
   ]
 }
@@ -441,7 +441,7 @@ export default function Header() {
       </Dialog>
     </Transition>
 
-        <div className="hidden lg:flex h-10 items-center justify-center bg-neutral-900 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 xl:px-32 z-20">
+        <div className="hidden lg:flex h-10 items-center justify-center bg-neutral-900 px-4 text-sm font-medium text-white sm:px-6 lg:px-6 xl:px-24 z-20">
             <div className="w-full flex justify-between items-center">
                 <div className="info-container inline-flex gap-3 text-white font-medium divide-x-2 divide-neutral-500">
                     <div className='pr-3'><FontAwesomeIcon className="size-4 mr-1 " style={{color: '#ff8900'}} icon={faMapMarkerAlt} ></FontAwesomeIcon> Öğrenci Sk. No:28, 34906 Pendik/İstanbul</div>
@@ -450,22 +450,22 @@ export default function Header() {
                 </div>
                 <ul className="list-inline social inline-flex gap-3 items-center" style={{margin: 0}}>
                     <li className="list-inline-item">
-                        <a href="https://www.instagram.com/normoilfiltration" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                        <a href="https://www.instagram.com/normhosehydraulic" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
                             <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="https://tr.linkedin.com/company/normoil-filtrasyon-teknolojileri" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                        <a href="https://www.linkedin.com/company/normhose/" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
                             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                         </a>
                     </li>
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                         <a href="https://m.facebook.com/normoil.filtrasyon/" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
                             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                         </a>
-                    </li>
+                    </li> */}
                     <li className="list-inline-item">
-                        <a href="https://www.youtube.com/channel/UCWAe7Oey0hAIDhlm1dQ_azw/about" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
+                        <a href="https://www.youtube.com/@Normhose" target='_blank' className='text-white text-lg hover:text-[#ff8900] transition-all duration-300'>
                             <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
                         </a>
                     </li>
@@ -478,7 +478,7 @@ export default function Header() {
             </div>
         </div>
 
-        <nav aria-label="Top" className="z-20 top-0 sticky h-[100px] mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32 shadow-md bg-white">
+        <nav aria-label="Top" className="z-20 top-0 sticky h-[100px] mx-auto w-full px-4 sm:px-6 lg:px-6 xl:px-24 shadow-md bg-white">
           <div className='h-full'>
             <div className="flex h-full items-center">
               {/* Logo */}
@@ -569,12 +569,12 @@ export default function Header() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.2 }}
-                            className="absolute w-fit max-w-md left-0 mt-2 p-3 overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+                            className="absolute w-max max-w-xl left-0 grid grid-cols-2 gap-2 mt-2 p-3 overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5"
                           >
                             {navigation.sectors.map((item) => (
                               <div
                                 key={item.name}
-                                className="group relative flex items-center gap-x-6 rounded-md py-3 px-5 text-sm/6 hover:bg-gray-100"
+                                className="col-span-1 group relative flex items-center gap-x-6 rounded-md py-3 px-5 text-sm/6 hover:bg-gray-100"
                               >
                                 <div className="flex-auto">
                                   <Link href={item.href} className="block font-medium transition text-neutral-900 hover:text-[#ff8900] text-nowrap">
@@ -746,7 +746,17 @@ export default function Header() {
                 </div>
               </PopoverGroup>
 
-              <div className="ml-auto flex items-center">
+              <div className="ml-auto flex items-center xl:gap-10 lg:gap-2">
+                {/* Gates Logo */}
+                <div className="hidden lg:flex">
+                    <Image
+                      width={80}
+                      height={40}
+                      alt="gates logo"
+                      src="/gates-logo.webp"
+                    />
+                </div>
+
                 {/* Parker Logo */}
                 <div className="hidden lg:flex">
                     <Image
