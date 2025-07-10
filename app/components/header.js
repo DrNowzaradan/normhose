@@ -628,43 +628,6 @@ export default function Header() {
                       </AnimatePresence>
                     </div>
 
-                    {/* <div
-                      className="relative"
-                      onMouseEnter={() => setHoveredDropdown("sektörler")}
-                      onMouseLeave={() => setHoveredDropdown(null)}
-                    >
-                      <button className="flex items-center gap-x-1 text-sm/6 font-semibold text-neutral-900 hover:text-[#ff8900] cursor-pointer">
-                        SEKTÖRLER
-                        <FontAwesomeIcon className="fa-icon" icon={faAngleDown} aria-hidden="true" />
-                      </button>
-
-                      <AnimatePresence>
-                        {hoveredDropdown === "sektörler" && (
-                          <motion.div
-                            initial={{ opacity: 0, y: -10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.2 }}
-                            className="absolute w-max max-w-xl left-0 grid grid-cols-2 gap-2 mt-2 p-3 overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5"
-                          >
-                            {navigation.sectors.map((item) => (
-                              <div
-                                key={item.name}
-                                className="col-span-1 group relative flex items-center gap-x-6 rounded-md py-3 px-5 text-sm/6 hover:bg-gray-100"
-                              >
-                                <div className="flex-auto">
-                                  <Link href={item.href} className="block font-medium transition text-neutral-900 hover:text-[#ff8900] text-nowrap">
-                                    {item.name}
-                                    <span className="absolute inset-0" />
-                                  </Link>
-                                </div>
-                              </div>
-                            ))}
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div> */}
-
 
                     <div className="flex items-center" onMouseEnter={() => setHoveredDropdown("sektorler")} onMouseLeave={() => setHoveredDropdown(null)}>
                       <Link
@@ -714,8 +677,9 @@ export default function Header() {
                                       >
                                         {sector.items.map((item, index) => (
                                           <li key={item.name} 
-                                          onMouseEnter={() => handleSubCategoryHover(item.name)} 
-                                          onMouseLeave={() => setHoveredCategoryImage(null)} className={`flex border-b ${index === sector.items.length - 1 ? 'border-b-0' : ''}`}>
+                                          // onMouseEnter={() => handleSubCategoryHover(item.name)} 
+                                          // onMouseLeave={() => setHoveredCategoryImage(null)} 
+                                          className={`flex border-b ${index === sector.items.length - 1 ? 'border-b-0' : ''}`}>
                                             <Link href={item.href} onClick={handleMenuClose}  className="px-2 py-1 my-1 hover:bg-neutral-100 hover:text-[#ff8900] text-[13px] rounded-md text-neutral-800">
                                               {item.name}
                                             </Link>

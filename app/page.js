@@ -209,12 +209,6 @@ export default function Home() {
           ))}
         </BlogList> */}
         <Contact />
-        {/* <div className="bubble absolute top-40 left-1/2 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div>
-        <div className="bubble absolute top-1/4 left-40 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div>
-        <div className="bubble absolute top-10 -left-60 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div>
-        <div className="bubble absolute top-3/5 left-60 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div>
-        <div className="bubble absolute top-3/5 -right-60 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div>
-        <div className="bubble absolute top-1/4 -right-20 w-60 h-60 bg-[#ff8900] filter blur-[150px] rounded-full -z-10 lg:block hidden"></div> */}
     </>
   );
 }
