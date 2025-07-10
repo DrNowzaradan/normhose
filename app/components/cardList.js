@@ -2,8 +2,8 @@ import React from 'react';
 
 function cardList({header, children}) {
     return (
-        <div className=" container mx-auto">
-            <div className="mx-auto py-16 px-8">
+        <div className="my-20 container mx-auto">
+            <div className="mx-auto">
                 {header && (
                     <div className="title mb-10" data-aos="fade-right" data-aos-duration="200">
                         <h2 className="tracking-wide">{header}</h2>

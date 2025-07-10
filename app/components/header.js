@@ -120,28 +120,104 @@ const navigation = {
     { name: 'Hidrolik Hortum Presleme', href: '/hizmetlerimiz/hidrolik-hortum-presleme' },
     { name: 'Hidrolik Hortum Statik Testi', href: '/hizmetlerimiz/hidrolik-hortum-statik-testi' },
     { name: 'Hidrolik Hortum Patlatma Testi', href: '/hizmetlerimiz/hidrolik-hortum-patlatma-testi' },
-    { name: 'Yerinde Tespit ve Ölçü Alma', href: '/hizmetlerimiz/yerinde-tespit-ve-olcum-alma' },
+    { name: 'Yerinde Tespit ve Ölçü Alma', href: '/hizmetlerimiz/yerinde-tespit-ve-olcu-alma' },
     { name: 'Yerinde Mobil Hidrolik Filo Hizmeti', href: '/hizmetlerimiz/yerinde-mobil-hidrolik-filo-hizmeti' },
   ],
   sectors: [
-    { name: 'Otomotiv', href: '/sektorler/otomotiv' },
-    { name: 'Endüstriyel Tesisler', href: '/sektorler/endüstriyel-tesisler' },
-    { name: 'Mobil Hidrolik', href: '/sektorler/mobil-hidrolik' },
-    { name: 'Denizcilik', href: '/sektorler/denizcilik' },
-    { name: 'Savunma Sanayi', href: '/sektorler/savuma-sanayi' },
-    { name: 'Perakende', href: '/sektorler/perakende' },
-    { name: 'Enerji', href: '/sektorler/enerji' },
-    { name: 'Demir Çelik', href: '/sektorler/demir-celik' },
-    { name: 'Endüstriyel', href: '/sektorler/endustriyel' },
-    { name: 'Geri Dönüşüm', href: '/sektorler/geri-donusum' },
-    { name: 'Petro Kimya - Offshore', href: '/sektorler/petro-kimya-offshore' },
-    { name: 'Madencilik', href: '/sektorler/madencilik' },
-    { name: 'Marin', href: '/sektorler/marin' },
-    { name: 'Mobil', href: '/sektorler/mobil' },
-    { name: 'Madeni Yağ Arıtma Programı', href: '/sektorler/deniz-motoru-madeni-yag-aritma-programi' },
-    { name: 'Klas Onayı/IACS Kuralları', href: '/sektorler/klas-onayi-iacs-kurallari-ve-denizcilik-yonetmelikleri' },
-    
-  ]
+    {
+      id: 'first-col',
+      name: 'Endüstriyel Tesisler',
+      href: '/sektorler/endustriyel-tesisler',
+      items: [
+        { name: 'Petrol', href: '/sektorler/endustriyel-tesisler/petrol' },
+        { name: 'Asansör', href: '/sektorler/endustriyel-tesisler/asansor' },
+        { name: 'Ağaç İşleme', href: '/sektorler/endustriyel-tesisler/agac-isleme' },
+        { name: 'Kağıt Endüstrisi', href: '/sektorler/endustriyel-tesisler/kagit-endustrisi' },
+        { name: 'Makine İmalatları', href: '/sektorler/endustriyel-tesisler/makine-imalatlari' },
+        { name: 'Plastik ve Alüminyum End. Makineleri', href: '/sektorler/endustriyel-tesisler/plastik-ve-aluminyum-endustrisi-makineleri' },
+      ],
+    },
+    {
+      id: 'second-col',
+      name: '',
+      href: '',
+      items: [
+        { name: 'Kompresör', href: '/sektorler/endustriyel-tesisler/kompresor' },
+        { name: 'Demir Çelik Fabrikaları', href: '/sektorler/endustriyel-tesisler/demir-celik-fabrikalari' },
+        { name: 'Jeotermal Santraller', href: '/sektorler/endustriyel-tesisler/jeotermal-santraller' },
+        { name: 'Çimento Endüstrisi', href: '/sektorler/endustriyel-tesisler/cimeto-endustrisi' },
+        { name: 'Hidroelektrik Santraller', href: '/sektorler/endustriyel-tesisler/hidroelektrik-santraller' },
+      ],
+    },
+    {
+      id: 'third-col',
+      name: 'Savunma Sanayi',
+      href: '/sektorler/savunma-sanayi',
+      items: [
+        { name: 'Özel Projeler', href: '/sektorler/savunma-sanayi/ozel-projeler' },
+        { name: 'Kara Araçları', href: '/sektorler/savunma-sanayi/kara-araclari' },
+        { name: 'Deniz İşletme ve Yüzen Araçları', href: '/sektorler/savunma-sanayi/deniz-isletme-ve-yüzen-araclari' },
+        { name: 'Hava Savunma ve Uçan Araçları', href: '/sektorler/savunma-sanayi/hava-savunma-ve-ucan-araclari' },
+      ],
+    },
+    {
+      id: 'fourth-col',
+      name: 'Mobil',
+      href: '/sektorler/mobil',
+      items: [
+        { name: 'İnşaat', href: '/sektorler/mobil/insaat' },
+        { name: 'Araç Satış Ekipmanlar', href: '/sektorler/mobil/arac-satis-ekipmanlari' },
+        { name: 'İş Makineleri', href: '/sektorler/mobil/is-makineleri' },
+        { name: 'Maden Grubu', href: '/sektorler/mobil/maden-grubu' },
+        { name: 'Tarım Grubu', href: '/sektorler/mobil/tarim-grubu' },
+        { name: 'Raylı Sistemler', href: '/sektorler/mobil/rayli-sistemler' },
+      ],
+    },
+    {
+      id: 'fifth-col',
+      name: 'Marin',
+      href: '/sektorler/marin',
+      items: [
+        { name: 'Tersane Grubu ve Yüzen Araç Sistemleri', href: '/sektorler/marin/tersane-grubu-ve-yuzen-arac-sistemleri' },
+        { name: 'Mega Yat Projeleri', href: '/sektorler/marin/mega-yat-projeleri' },
+      ],
+    },
+    {
+      id: 'eight-col',
+      name: 'Otomotiv ve OEM',
+      href: '/sektorler/otomotiv-ve-oem',
+      items: [
+        { name: 'Otobüs', href: '/sektorler/otomotiv-ve-oem/otobus' },
+        { name: 'Traktör', href: '/sektorler/otomotiv-ve-oem/traktor' },
+        { name: 'Kamyon ve Tır', href: '/sektorler/otomotiv-ve-oem/kamyon-ve-tir' },
+      ],
+    },
+    {
+      id: 'ninth-col',
+      name: 'Madencilik',
+      href: '/sektorler/madencilik',
+      items: [
+        { name: 'TBM Makineleri', href: '/sektorler/madencilik/tbm-makineleri' },
+        { name: 'Farekazık ve ROK Makineleri', href: '/sektorler/madencilik/farekazik-ve-rok-makineleri' },
+        { name: 'Mermer Makineleri', href: '/sektorler/madencilik/mermer-makineleri' },
+      ],
+    },
+    {
+      id: 'ten-col',
+      name: 'Petrokimya',
+      href: '/sektorler/petrokimya',
+      items: [
+        { name: 'Deniz ve Kara Petrol Aktarma Makineleri', href: '/sektorler/petrokimya/deniz-ve-kara-petrol-aktarma-makineleri' },
+      ],
+    },
+    {
+      id: 'eleventh-col',
+      name: 'Geri Dönüşüm',
+      href: '/sektorler/geri-donusum',
+      items: [
+      ],
+    },
+  ],
 }
 
 export default function Header() {
@@ -552,7 +628,7 @@ export default function Header() {
                       </AnimatePresence>
                     </div>
 
-                    <div
+                    {/* <div
                       className="relative"
                       onMouseEnter={() => setHoveredDropdown("sektörler")}
                       onMouseLeave={() => setHoveredDropdown(null)}
@@ -587,6 +663,81 @@ export default function Header() {
                           </motion.div>
                         )}
                       </AnimatePresence>
+                    </div> */}
+
+
+                    <div className="flex items-center" onMouseEnter={() => setHoveredDropdown("sektorler")} onMouseLeave={() => setHoveredDropdown(null)}>
+                      <Link
+                        href={"/sektorler"}
+                        className="flex items-center text-sm font-semibold text-neutral-900 hover:text-[#ff8900] mr-2"
+                        onClick={() => setHoveredDropdown(null)}
+                      >
+                        SEKTÖRLER
+                      </Link>
+                      <div key="urunler-dropdown" className="flex relative">
+                        <motion.div
+                           variants={{
+                            initial: { y: 0 },
+                            bouncing: { y: [0, -5], transition: { duration: 0.4, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" } }
+                          }}
+                          initial="initial"
+                          whileHover="bouncing"
+                          onHoverEnd={(e) => e.target.style.transform = "translateY(0px)"}
+                        >
+                          <button className="flex items-center gap-x-1 text-sm/6 font-semibold text-neutral-900 hover:text-[#ff8900] cursor-pointer">
+                            <FontAwesomeIcon className="fa-icon" icon={faAngleDown} aria-hidden="true" />
+                          </button>
+                        </motion.div>
+                        
+                        <AnimatePresence>
+                          {hoveredDropdown === "sektorler" && (
+                            <motion.div
+                              initial={{ opacity: 0, y: -10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -10 }}
+                              transition={{ duration: 0.2 }}
+                              className="fixed top-[110px] lg:left-0 2xl:left-[15%] w-[1280px] bg-white border rounded-xl shadow-lg p-3 z-50"
+                            >
+                            <div className="relative bg-white">
+                            <div className="mx-auto max-w-7xl px-8">
+                              <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                              {navigation.sectors.map((sector) => (
+                                <div className="col-span-1 gap-x-8 gap-y-10 text-sm" key={sector.id}>
+                                    <div key={sector.name}>
+                                      <Link href={sector.href} onClick={handleMenuClose}  id={`${sector.name}-heading`} className="font-semibold text-gray-900 hover:text-[#ff8900]">
+                                        {sector.name || <br></br>}
+                                      </Link>
+                                      <ul
+                                        role="list"
+                                        aria-labelledby={`${sector.name}-heading`}
+                                        className="mt-6 sm:mt-4 "
+                                      >
+                                        {sector.items.map((item, index) => (
+                                          <li key={item.name} 
+                                          onMouseEnter={() => handleSubCategoryHover(item.name)} 
+                                          onMouseLeave={() => setHoveredCategoryImage(null)} className={`flex border-b ${index === sector.items.length - 1 ? 'border-b-0' : ''}`}>
+                                            <Link href={item.href} onClick={handleMenuClose}  className="px-2 py-1 my-1 hover:bg-neutral-100 hover:text-[#ff8900] text-[13px] rounded-md text-neutral-800">
+                                              {item.name}
+                                            </Link>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                </div>
+                              ))}
+                              <div className="col-span-1 gap-x-8 gap-y-10 text-sm row-start-2 col-start-4" key="eight-col">
+                                    <div key="eight-col">
+                                      {/* <Image id={`eight-col-heading`} className="font-medium text-gray-900 h-[225px] w-fit rounded-xl" src={hoveredCategoryImage || '/noyas-m-1a.webp'} width={1000} height={1000} alt='ürün kategori görseli'/> */}
+                                    </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                        )}
+                        </AnimatePresence>
+                      </div>
                     </div>
 
                     {/* <div className="flex items-center" onMouseEnter={() => setHoveredDropdown("urunler")} onMouseLeave={() => setHoveredDropdown(null)}>
